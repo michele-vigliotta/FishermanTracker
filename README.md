@@ -22,7 +22,7 @@ The system improves monitoring accuracy by separating person detection and fishe
 
 <h2>Development</h2>
 
-<h3>1. Person Detection Model (YOLOv11-L) - Detection</h3>
+<h3>1. Person Detection Model (YOLOv11-L) – Detection</h3>
 
 <h4><i>Manual hyperparameter search</i></h4>
 
@@ -37,46 +37,41 @@ The system improves monitoring accuracy by separating person detection and fishe
 <p>Each configuration was trained for 50 epochs on Google Colab, using early stopping to compare performance.</p>
 
 <h4><i>Training with best configuration</i></h4>
-<p>The configuration <code>config3_lr_basso</code> showed the best detection metrics (<strong>mAP50, Recall, Precision</strong>) and was selected for full training.</p>
+<p>The <code>config3_lr_basso</code> configuration achieved the best detection metrics (<strong>mAP50, Recall, Precision</strong>) and was selected for full training.</p>
 
 <h4><i>Testing</i></h4>
-<p>The model was evaluated on the Mix Detection test set, achieving the following results:
-
+<p>The model was evaluated on the Mix Detection test set, achieving the following results:</p>
 <ul>
   <li><strong>mAP50:</strong> 0.561</li>
   <li><strong>mAP50-95:</strong> 0.301</li>
   <li><strong>Precision:</strong> 0.701</li>
   <li><strong>Recall:</strong> 0.498</li>
-</ul></p>
+</ul>
 
 <p align="center">
 <img src="runs/detect/val/val_batch1_pred.jpg" width="850">
 </p>
 
-
 <hr>
 
-<h3>2. Person–Fisher Classification Model (YOLOv11-Classify) - Classification</h3>
+<h3>2. Person–Fisher Classification Model (YOLOv11-Classify) – Classification</h3>
 
 <h4><i>Automated hyperparameter tuning</i></h4>
 <p>The <strong>YOLO tune</strong> method was used for automatic hyperparameter optimization.</p>
 
 <h4><i>Training with optimal parameters</i></h4>
-<p>The classification model was trained using the best configuration identified by the automated tuning.</p>
+<p>The classification model was trained using the best configuration identified during automated tuning.</p>
 
 <h4><i>Testing</i></h4>
-<p>The model was evaluated on the Mix Classification test set, achieving the following results:
-
+<p>The model was evaluated on the Mix Classification test set, achieving the following results:</p>
 <ul>
   <li><strong>Top-1 accuracy:</strong> 99.16%</li>
-  <li><strong>Inference Time:</strong> 412 ms</li>
-</ul></p>
+  <li><strong>Inference time:</strong> 412 ms</li>
+</ul>
 
 <p align="center">
 <img src="runs/classify/val/val_batch0_pred.jpg" width="850">
 </p>
-
-
 
 <h2>Tech Stack</h2>
 <ul>
@@ -92,14 +87,11 @@ Full technical documentation available here:
 <a href="/docs/Tesi_Michele_Vigliotta.pdf"><code>Tesi_Michele_Vigliotta.pdf</code></a>
 </p>
 
-<h2>Authors</h2>
-
-* Michele Vigliotta
+<h2>Author</h2>
+<ul>
+  <li>Michele Vigliotta</li>
+</ul>
 
 <hr>
 
 <p align="center"><i>University project developed as part of the thesis work.</i></p>
-
-
-
-
