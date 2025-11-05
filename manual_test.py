@@ -1,4 +1,4 @@
-
+# Test manuale per verificare possibili errori con oggetti simili a canne da pesca
 
 from ultralytics import YOLO
 

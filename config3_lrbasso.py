@@ -1,11 +1,10 @@
-from ultralytics import YOLO
+# Valutazione del modello di detection YOLOv11 addestrato con configurazione config3_lrbasso sul set di test
 
+from ultralytics import YOLO
 
 model = YOLO("best_config3_lrbasso.pt")
 
-
 metrics = model.val(data="detection_mix/detect.yaml", split="test")
-
 
 print("\n=== RISULTATI SUL TEST SET ===")
 print(f"mAP50: {metrics.box.map50():.4f}")

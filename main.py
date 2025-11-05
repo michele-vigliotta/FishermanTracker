@@ -1,3 +1,6 @@
+# Valutazione del modello di classificazione YOLOv11 addestrato con il file best_cls.pt (ootenuto da tunig auto)
+# sul set di test classification_mix
+
 
 from ultralytics import YOLO
 

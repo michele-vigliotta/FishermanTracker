@@ -1,3 +1,5 @@
+# Valutazione del modello di detection YOLOv11 addestrato con configurazione scelta dal tuning automatico
+
 from ultralytics import YOLO
 
 
